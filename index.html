@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Heading -->
+    <section class=" ">
+        <div class="transparent-container container-fluid p-4 text-info text-center mb-5 mt-4 w-75 rounded-5">
+            <h1 class="">Expense Tracker</h1>
+        </div>
+    </section>
+    <!-- Form Creation -->
+    <section class="w-50 mx-auto text-white">
+        <div class="transparent-container container-fluid p-2 rounded-top-5">
+            <h3 class="text-center"> Add your expenses here </h3>
+        </div>
+        <div class="transparent-container container-fluid d-md-block text-center p-2 rounded-bottom-5">
+            <form action="#" class="w-75 mx-auto" id="expenseForm">
+                <!-- Choose Amount -->
+                <div class="col mb-3">
+                    <label for="amount" class="col-form-label">Choose Amount</label>
+                    <input type="number" class="form-control" id="amount" required>
+                </div>
+
+                <!-- Write Description -->
+                <div class="col mb-3">
+                    <label for="description" class="col-form-label">Write Description</label>
+                    <input name="description" id="description" class="form-control" required></input>
+                </div>
+
+                <!-- Choose Category -->
+                <div class="col mb-3">
+                    <label for="category" class="col-form-label">Choose Category</label>
+                    <select name="category" id="category" class="form-select form-control" required>
+                        <option value="" selected disabled>Choose the category</option>
+                        <option value="clothing and apparel">Clothing and Apparel</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="home and kitchen">Home and Kitchen</option>
+                        <option value="beauty and personal care">Beauty and Personal Care</option>
+                        <option value="books and literature">Books and Literature</option>
+                        <option value="health and wellness">Health and Wellness</option>
+                        <option value="sports and outdoors">Sports and Outdoors</option>
+                        <option value="toys and games">Toys and Games</option>
+                        <option value="automotive and tools">Automotive and Tools</option>
+                        <option value="jewelry and accessories">Jewelry and Accessories</option>
+                        <option value="furniture and home decor">Furniture and Home Decor</option>
+                        <option value="food and groceries">Food and Groceries</option>
+                        <option value="pet supplies">Pet Supplies</option>
+                        <option value="baby and kids">Baby and Kids</option>
+                        <option value="music and movies">Music and Movies</option>
+                        <option value="office supplies">Office Supplies</option>
+                        <option value="fitness and exercise">Fitness and Exercise</option>
+                        <option value="arts and crafts">Arts and Crafts</option>
+                        <option value="travel and luggage">Travel and Luggage</option>
+                        <option value="shoes and footwear">Shoes and Footwear</option>
+                    </select>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="col mt-4 mb-2">
+                    <div class="col-12 d-flex justify-content-center">
+                        <input type="submit" class="form-control button d-flex justify-content-center" id="submit" value="Add">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+    <!-- Detail Objects Sections -->
+    <section class="w-75 mx-auto">
+
+        <div class=" w-75 transparent-container container-fluid p-2 mt-5 rounded-5 text-warning">
+            <h3 class="text-center"> All Expenses </h3>
+        </div>
+
+        <div class="container-fluid mt-5 detailsObjectsDiv d-flex justify-content-around flex-wrap">
+            <!-- Objects Cards will be added here -->
+        </div>
+    </section>
+
+</body>
+<script src="script.js"></script>
+
+</html>
